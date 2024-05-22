@@ -1,0 +1,70 @@
+****************************************************************************
+***                         Sentaurus Topography                         ***
+***                          Version V-2023.12                           ***
+***                        (3.570, x86_64, Linux)                        ***
+***                                                                      ***
+***                  Copyright (C) 2023 Synopsys, Inc.                   ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+Compiled Wed Nov  1 17:07:03 UTC 2023 on de02pollux (x86_64, Linux)
+
+Started Tue May 21 2024 21:45:04 on host 'darkknight'.
+Entering command file batch mode, input file: 'temp_extract.cmd'.
+
+/----------------------------
+define_structure
+ Checking out 1 parallel license for a total of 4 threads.
+ pmc_file = 'result.pmc'.
+ PMC grid size: 100x100x302, actual spacing [nm]: (1 1 1).
+ Memory footprint of the PMC grid: 21.1 MB.
+ slice_angle = -90.
+define_structure done.
+\----------------------------
+
+/----------------------------
+extract
+ type = bounding_box
+ Checking out 1 parallel license for a total of 4 threads.
+ Bounding_box = {0 0 0} {0.0999999940631824 0.0999999940631824 0.301999989460455}
+extract done.
+\----------------------------
+
+/----------------------------
+extract
+ type = shape_analysis
+ Checking out 1 parallel license for a total of 4 threads.
+ reference_shape = cylinder_hole.
+ point1 = {0 0 0}.
+ point2 = {0 0 0.302}.
+ max_radius = 0.05 [um].
+ smoothing_order = 0.
+ output_type = {doe csv}.
+ csv_file = result_10_50_500_0.5_300_100_1000_14_10_shape_analysis_10_.csv.
+ 
+ Shape analysis extraction: Cylinder hole is located at a reflective boundary. Reflective symmetry will be taken into account during shape analysis.
+ Saving profile data to file result_10_50_500_0.5_300_100_1000_14_10_shape_analysis_10_.csv... 
+ 
+ Writing DOE parameters...
+extract done.
+\----------------------------
+
+
+** Timing Report ******************************************************************
+*  Timer                       CPU Time [s] Elapsed Time [s] Time [%]      Calls  *
+*                                                                                 *
+*  Miscellaneous                        0.7              0.6     70.0          1  *
+*  Extract                              0.2              0.2     25.0          2  *
+*  Parallel licenses check-out          0.0              0.0      3.1          3  *
+*  Parallel licenses check-in           0.0              0.0      1.9          3  *
+*                                                                                 *
+*  Total                                0.9              0.9                      *
+***********************************************************************************
+
+Finished Tue May 21 2024 21:45:05.
+
+Sentaurus Topography exited successfully. Have a nice day.
