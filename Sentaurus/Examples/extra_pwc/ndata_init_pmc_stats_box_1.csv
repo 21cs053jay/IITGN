@@ -1,0 +1,9 @@
+time,deposited_volume_adsorb_F_Si,deposited_volume_etch_F_Si,deposited_volume_refl_Si,deposited_volume_refl_SiFx,deposited_volume_sput_Si,deposited_volume_sput_SiFx,reaction_executions_adsorb_F_Si,reaction_executions_etch_F_Si,reaction_executions_refl_Si,reaction_executions_refl_SiFx,reaction_executions_sput_Si,reaction_executions_sput_SiFx,species_volume_Photoresist,species_volume_SiFx,species_volume_Silicon,species_volume_total,sputter_yield_adsorb_F_Si,sputter_yield_etch_F_Si,sputter_yield_refl_Si,sputter_yield_refl_SiFx,sputter_yield_sput_Si,sputter_yield_sput_SiFx,sputtered_volume_adsorb_F_Si,sputtered_volume_etch_F_Si,sputtered_volume_refl_Si,sputtered_volume_refl_SiFx,sputtered_volume_sput_Si,sputtered_volume_sput_SiFx
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1.5e-21,1.5e-21,0,0,0,0,0,0,0,0,0,0,0,0
+0.0333333,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1.5e-21,1.5e-21,0,0,0,0,0,0,0,0,0,0,0,0
+0.0666667,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1.5e-21,1.5e-21,0,0,0,0,0,0,0,0,0,0,0,0
+0.1,0,0,0,0,0,0,1.23819e+06,8,3069,507,482,74555,0,4.6296e-25,1.47496e-21,1.47543e-21,0,0,0,0,28.4004,16.2976,0,0,0,0,2.7378e-25,2.43014e-23
+0.133333,0,0,0,0,0,0,3.06791e+06,39,7776,1434,1258,185622,0,1.33532e-24,1.43792e-21,1.43926e-21,0,0,0,0,28.6184,16.1681,0,0,0,0,7.2004e-25,6.00232e-23
+0.166667,0,0,0,0,0,0,4.80522e+06,107,12661,2597,1973,293693,0,2.18726e-24,1.40277e-21,1.40495e-21,0,0,0,0,28.6204,15.9888,0,0,0,0,1.12936e-24,9.39161e-23
+0.2,0,0,0,0,0,0,6.48023e+06,201,17416,3967,2678,399681,0,3.02922e-24,1.36886e-21,1.37189e-21,0,0,0,0,28.7326,15.8343,0,0,0,0,1.53892e-24,1.26573e-22
+0.233333,0,0,0,0,0,0,8.10929e+06,336,22209,5593,3410,504192,0,3.77478e-24,1.33585e-21,1.33963e-21,0,0,0,0,28.7607,15.7089,0,0,0,0,1.96148e-24,1.58406e-22
