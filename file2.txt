@@ -1,0 +1,27 @@
+############### Command to Run: sptopo3d <file_name> #################
+define_structure pmc_file=./NS1.pmc
+fill material=Blank thickness=0.0 
+######################################################################
+set M_Probes [list ]
+set M_Scan 0.040
+set M_Stop 0.050
+set M_Step 0.0001
+while {$M_Scan <= $M_Stop} {
+	lappend M_Probes $M_Scan
+	set M_Scan [expr $M_Scan + $M_Step]
+}
+######################################################################
+set Metrology_out_file [open "Metrology_out.csv" "w"]
+puts $Metrology_out_file "x1, y1, z1, x2, y2, z2, Metrology_Out"
+######################################################################
+foreach z $M_Probes {
+	set x1 2.349999919534e-02
+	set y1 0
+	set z1 $z
+	set x2 2.349999919534e-02
+	set y2 0.040
+	set z2 $z
+	set Metrology_Out [extract type=probe property=length  materials= {SiliconGermanium} point1= "$x1 $y1 $z1" point2= "$x2 $y2 $z2" output=inside]
+	puts $Metrology_out_file "$x1, $y1, $z, $x2, $y2, $z, $Metrology_Out"
+	}
+close $Metrology_out_file
