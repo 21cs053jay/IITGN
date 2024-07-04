@@ -1,3 +1,5 @@
+# SRIP Research Project - Prediction of Intermediate Etching using ML/DL models.
+
 This repository contains all of the ML/DL models for all of the experiments performed during the internship period at IIT GANDHINAGAR. To import it in your device, use the following command: `git clone https://github.com/21cs053jay/IITGN.git`
 
 ### Etching Experiments involved creation of data using Sentaurus Topography tool and performed experiments were as follows: 
