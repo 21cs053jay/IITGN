@@ -1,16 +1,17 @@
-/ViennaPS/ViennaPS.rar
+/ViennaPS
 /ViennaPS/.vs/ViennaPS/v15/Browse.VC.db
-/Sentaurus/Data/csvfiles
+/Sentaurus/Data_with_time_changing_flux/csvfiles
 /Sentaurus/csvfiles
-/Sentaurus/file12_2150/csvfiles
-/Sentaurus/file12_1700/csv_files
+/Sentaurus/Data_with_constant_flux/csvfiles
 /Sentaurus/TestDataset
-/Sentaurus/GAA struct 1/new_interval/csvfiles
-/Sentaurus/GAA struct 1/new_interval/tdrfiles
-/Sentaurus/GAA struct 1/new_interval/pmcfiles
-/Sentaurus/GAA struct 1/new_interval/images
-/Sentaurus/file12_1700
-/Sentaurus/file12_2150
-/Sentaurus/file12_1700
 /Sentaurus/file12_1700
 /Sentaurus/*.tar.gz
+/*.zip
+/Sentaurus/TestDataset
+/Sentaurus/Examples
+/Sentaurus/GAA _Channel_Release/new_interval/csvfiles
+/Sentaurus/GAA _Channel_Release/new_interval/csvfiles
+/Sentaurus/GAA _Channel_Release/new_interval/images
+/Sentaurus/GAA _Channel_Release/new_interval/pmcfiles
+/Sentaurus/GAA _Channel_Release/new_interval/tdrfiles
+/Sentaurus/GAA _Channel_Release/images.tar.gz
