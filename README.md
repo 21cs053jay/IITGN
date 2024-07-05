@@ -14,4 +14,4 @@ Each of these experiments had their own importance in the project and contribute
    - Now, to decrease the complexity of data such as number of features/parameters, time changing flux was swapped with constant flux, everything else remaining same. (In folder with name: Data_with_constant_flux)
 
 2. Actual Replication of Channel Release in Gate All Around Field Effect Transistor (GAAFET): In folder named (GAA_Channel_Release)
-   - 
+   
