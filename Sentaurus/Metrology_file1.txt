@@ -1,0 +1,8 @@
+############### Command to Run: sptopo3d <file_name> #################
+define_structure pmc_file=./NS1.pmc
+fill material=Blank thickness=0.0 
+######################################################################
+set point1 {2.349999919534e-02 0 0.045}
+set point2 {2.349999919534e-02 0.040 0.045}
+set Metrology_Out [extract type=probe property=length materials= {Blank, SiliconGermanium} point1= $point1 point2=$point2 output=inside]
+puts "Output Metrology = $Metrology_Out"

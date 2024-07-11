@@ -15,3 +15,7 @@
 /Sentaurus/GAA _Channel_Release/new_interval/pmcfiles
 /Sentaurus/GAA _Channel_Release/new_interval/tdrfiles
 /Sentaurus/GAA _Channel_Release/images.tar.gz
+/Sentaurus/GAA _Channel_Release/*.csv
+/Sentaurus/GAA _Channel_Release/csvfiles.tar.gz
+
+
