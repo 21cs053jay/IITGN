@@ -16,7 +16,7 @@ Each of these experiments had their own importance in the project and contribute
 
 2. Actual Replication of Channel Release in Gate All Around Field Effect Transistor (GAAFET): In folder named (GAA_Channel_Release)
    
-Repository File Hierarchy:
+Repository File Hierarchy:  
 Sentaurus/  
 │  
 ├── Data_with_constant_flux/  
@@ -24,30 +24,31 @@ Sentaurus/
 │   ├── model_1.ipynb  
 │   ├── model_2.ipynb  
 │   ├── model_2_LSTM_intermediate_with_time.ipynb  
-│   └── Topography_code.txt  
+│   └── Topography_code.txt - cmd file for cyl. hole etching (constant flux) inside topo. tool  
 │  
 ├── Data_with_time_changing_flux/  
 │   ├── model_1.ipynb  
 │   ├── model_2.ipynb  
-│   └── Topography_code.txt  
+│   └── Topography_code.txt - cmd file for  cyl. hole etching (time varying flux) inside topo. tool  
 │    
 ├── GAA_Channel_Release/  
 │   ├── new_interval/  
 │   │   ├── data_analysis.ipynb  
 │   │   ├── extract.cmd  
 │   │   ├── extract.sh  
-│   │   ├── images.ipynb  
-│   │   ├── model.ipynb   
+│   │   ├── images.ipynb - notebook file for the SiGe Thickness prediction at intermediate steps  
+│   │   ├── model.ipynb - notebook file for the Average Roughness prediction  
 │   │   └── temp_extract.cmd  
-│   ├── exponent_experiment.csv  
-│   ├── Extraction_probe.txt  
-│   ├── Extraction_shape_analysis.ipynb  
+│   ├── exponent_experiment.ipynb -  notebook file for experiments done on variation of avg. roughness with exponent  
+│   ├── Extraction_probe.txt - cmd file for data extraction using probe method   
+│   ├── Extraction_shape_analysis.ipynb - cmd file for data extraction using shape analysis method  
 │   ├── Metrology_file1.txt - By sir  
 │   ├── Metrology_file2.txt - By sir  
 │   ├── Metrology_file3.txt - By sir  
 │   ├── shell_channel_release.sh  
 │   ├── shell_extract.sh  
-│   └── shell_test_1_interval.ipynb  
+│   ├── shell_test_1_interval.ipynb 
+│   └── Topography_code.txt - cmd file for etching of GAAFET (Channel Release) inside topo. tool  
 │  
 ├── test-lammps/  
 │  
