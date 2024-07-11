@@ -19,18 +19,18 @@ Each of these experiments had their own importance in the project and contribute
 Repository File Hierarchy:
 Sentaurus/
 │
-├── Data_with_constant_flux/
-│   ├── model_1_intermediate_with_time.ipynb
-│   ├── model_1.ipynb
-│   ├── model_2.ipynb
-│   ├── model_2_LSTM_intermediate_with_time.ipynb
-│   └── Topography_code.txt
-│
-├── Data_with_time_changing_flux/
-│   ├── model_1.ipynb
-│   ├── model_2.ipynb
-│   └── Topography_code.txt
-│
+├── Data_with_constant_flux/  
+│   ├── model_1_intermediate_with_time.ipynb  
+│   ├── model_1.ipynb  
+│   ├── model_2.ipynb  
+│   ├── model_2_LSTM_intermediate_with_time.ipynb  
+│   └── Topography_code.txt  
+│  
+├── Data_with_time_changing_flux/  
+│   ├── model_1.ipynb  
+│   ├── model_2.ipynb  
+│   └── Topography_code.txt  
+│  
 ├── GAA_Channel_Release/
 │   ├── new_interval/
 │   │   ├── data_analysis.ipynb
