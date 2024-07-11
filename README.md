@@ -17,8 +17,8 @@ Each of these experiments had their own importance in the project and contribute
 2. Actual Replication of Channel Release in Gate All Around Field Effect Transistor (GAAFET): In folder named (GAA_Channel_Release)
    
 Repository File Hierarchy:
-Sentaurus/
-│
+Sentaurus/  
+│  
 ├── Data_with_constant_flux/  
 │   ├── model_1_intermediate_with_time.ipynb  
 │   ├── model_1.ipynb  
@@ -30,29 +30,29 @@ Sentaurus/
 │   ├── model_1.ipynb  
 │   ├── model_2.ipynb  
 │   └── Topography_code.txt  
+│    
+├── GAA_Channel_Release/  
+│   ├── new_interval/  
+│   │   ├── data_analysis.ipynb  
+│   │   ├── extract.cmd  
+│   │   ├── extract.sh  
+│   │   ├── images.ipynb  
+│   │   ├── model.ipynb   
+│   │   └── temp_extract.cmd  
+│   ├── exponent_experiment.csv  
+│   ├── Extraction_probe.txt  
+│   ├── Extraction_shape_analysis.ipynb  
+│   ├── Metrology_file1.txt - By sir  
+│   ├── Metrology_file2.txt - By sir  
+│   ├── Metrology_file3.txt - By sir  
+│   ├── shell_channel_release.sh  
+│   ├── shell_extract.sh  
+│   └── shell_test_1_interval.ipynb  
 │  
-├── GAA_Channel_Release/
-│   ├── new_interval/
-│   │   ├── data_analysis.ipynb
-│   │   ├── extract.cmd
-│   │   ├── extract.sh
-│   │   ├── images.ipynb
-│   │   ├── model.ipynb
-│   │   └── temp_extract.cmd
-│   ├── exponent_experiment.csv
-│   ├── Extraction_probe.txt
-│   ├── Extraction_shape_analysis.ipynb
-│   ├── Metrology_file1.txt - By sir
-│   ├── Metrology_file2.txt - By sir
-│   ├── Metrology_file3.txt - By sir
-│   ├── shell_channel_release.sh
-│   ├── shell_extract.sh
-│   └── shell_test_1_interval.ipynb
-│
-├── test-lammps/
-│
-├── ViennaPS/
-│
-├── Document - Initial days diary.zip
-└── SRIP_Report_Presentation.pdf
+├── test-lammps/  
+│  
+├── ViennaPS/  
+│  
+├── Document - Initial days diary.zip  
+└── SRIP_Report_Presentation.pdf  
 
