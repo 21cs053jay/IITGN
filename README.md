@@ -31,7 +31,6 @@ Sentaurus/
 │   ├── model_2.ipynb
 │   └── Topography_code.txt
 │
-│
 ├── GAA_Channel_Release/
 │   ├── new_interval/
 │   │   ├── data_analysis.ipynb
@@ -49,10 +48,11 @@ Sentaurus/
 │   ├── shell_channel_release.sh
 │   ├── shell_extract.sh
 │   └── shell_test_1_interval.ipynb
-
+│
 ├── test-lammps/
-
+│
 ├── ViennaPS/
-
+│
 ├── Document - Initial days diary.zip
 └── SRIP_Report_Presentation.pdf
+
