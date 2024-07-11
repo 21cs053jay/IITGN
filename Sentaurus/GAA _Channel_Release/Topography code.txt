@@ -1,0 +1,112 @@
+#start
+let parallel=true
+let num_threads=20
+
+#defining silicon structure
+define_structure material=Silicon point_min={0 0 0} point_max={0.047 0.04 0.01}
+
+fill material=SiliconGermanium thickness=0.01
+
+fill material=Silicon thickness=0.005
+
+fill material=SiliconGermanium thickness=0.01
+
+fill material=Silicon thickness=0.005
+
+fill material=SiliconGermanium thickness=0.01
+
+fill material=Silicon thickness=0.005
+
+fill material=SiliconGermanium thickness=0.01
+
+
+
+#geometric etching
+define_shape type=cube point_min={0.0 0.01 0.01} point_max={0.016 0.03 0.065} name = rem_pl1
+define_shape type=cube point_min={0.031 0.01 0.01} point_max={0.047 0.03 0.065} name = rem_pl2
+etch shape=rem_pl1
+etch shape=rem_pl2
+
+fill material=SiN thickness=0.02
+
+#for top above SiliconGermanium
+define_shape type=cube point_min={0 0 0.065} point_max={0.047 0.04 0.085} name = rem_SiliconNtop
+etch shape=rem_SiliconNtop
+
+#for left and right parts
+define_shape type=cube point_min={0.0 0 0.01} point_max={0.01 0.04 0.065} name = rem_SiliconNleft
+define_shape type=cube point_min={0.037 0 0.01} point_max={0.047 0.04 0.065} name = rem_SiliconNright
+etch shape=rem_SiliconNleft
+etch shape=rem_SiliconNright
+
+#for front and back of middle portion
+define_shape type=cube point_min={0.0 0 0.01} point_max={0.047 0.01 0.065} name = rem_SiliconNf
+define_shape type=cube point_min={0.0 0.03 0.01} point_max={0.047 0.04 0.065} name = rem_SiliconNb
+etch shape=rem_SiliconNf
+etch shape=rem_SiliconNb
+
+#saving intial sructure
+save file=init_struct.tdr
+
+##start - pmc simple etch model definition
+define_model name=HCl_etch_Si description="Silicon chemical etch by HCl"
+#add_source_species model=HCl_etch_Si name=H
+
+add_source_species model=HCl_etch_Si name=HCl
+
+#add_reaction model=HCl_etch_Si name=SiCl  expression="Cl<g> + Silicon<s> = SiCl<s>"
+
+add_reaction model=HCl_etch_Si name=SiCl2 expression="HCl<g> + Silicon<s> = SiCl2<v>"  
+
+#add_reaction model=HCl_etch_Si name=GeCl  expression="Cl<g> + SiliconGermanium<s> = GeCl<s>"
+
+add_reaction model=HCl_etch_Si name=GeCl2 expression="HCl<g> + SiliconGermanium<s> = GeCl2<v>"  
+
+   
+finalize_model model=HCl_etch_Si
+##end - pmc simple etch model definition
+
+##start - define distribution
+#define_species_distribution name=distribution exponent=1 species=H flux=5.0e-5
+
+define_species_distribution name=distribution exponent=1 species=HCl flux=HCl_flux
+##end - define distribution
+
+##start - define machine
+define_etch_machine model=HCl_etch_Si species_distribution=distribution 
+##end - define machine
+
+##start - reaction properties
+#for 4 processes
+#add_reaction_properties reaction=SiCl p=0.0014
+#add_reaction_properties reaction=SiCl2 p=0.7
+
+#add_reaction_properties reaction=GeCl p=0.07
+#add_reaction_properties reaction=GeCl2 p=0.7
+
+##for 2 processes
+add_reaction_properties reaction=SiCl2 p=0.00075
+add_reaction_properties reaction=GeCl2 p=0.05
+
+##end - reaction properties
+
+etch spacing=0.0002 time=time_t1<s> method=pmc
+save type=pmc file=./channel_release/new_interval/pmcfiles/file_HCl_flux_time_t1.pmc
+save type=gc file=./channel_release/new_interval/tdrfiles/file_HCl_flux_time_t1.tdr
+
+etch spacing=0.0002 time=rel_time<s> method=pmc
+save type=pmc file=./channel_release/new_interval/pmcfiles/file_HCl_flux_time_t2.pmc
+save type=gc file=./channel_release/new_interval/tdrfiles/file_HCl_flux_time_t2.tdr
+
+etch spacing=0.0002 time=rel_time<s> method=pmc
+save type=pmc file=./channel_release/new_interval/pmcfiles/file_HCl_flux_time_t3.pmc
+save type=gc file=./channel_release/new_interval/tdrfiles/file_HCl_flux_time_t3.tdr
+
+etch spacing=0.0002 time=rel_time<s> method=pmc
+save type=pmc file=./channel_release/new_interval/pmcfiles/file_HCl_flux_time_t4.pmc
+save type=gc file=./channel_release/new_interval/tdrfiles/file_HCl_flux_time_t4.tdr
+
+etch spacing=0.0002 time=last<s> method=pmc
+save type=pmc file=./channel_release/new_interval/pmcfiles/file_HCl_flux_time_t5.pmc
+save type=gc file=./channel_release/new_interval/tdrfiles/file_HCl_flux_time_t5.tdr
+
