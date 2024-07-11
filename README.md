@@ -47,7 +47,7 @@ Sentaurus/
 │   ├── Metrology_file3.txt - By sir  
 │   ├── shell_channel_release.sh  
 │   ├── shell_extract.sh  
-│   ├── shell_test_1_interval.ipynb 
+│   ├── shell_test_1_interval.ipynb  
 │   └── Topography_code.txt - cmd file for etching of GAAFET (Channel Release) inside topo. tool  
 │  
 ├── test-lammps/  
@@ -55,5 +55,5 @@ Sentaurus/
 ├── ViennaPS/  
 │  
 ├── Document - Initial days diary.zip  
-└── SRIP_Report_Presentation.pdf  
+└── SRIP_Report_Presentation.pptx - Main ppt containing detailed info.   
 
